@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>nth-of-type(n) / nth-last-of-type()</title>
+        <style>
+            p:nth-of-type(2){ /* 자식 p태그 두번째 */
+                color:red;
+            }
+            p:nth-last-of-type(1){ /*마지막에서 첫번째*/
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p>p 0</p>
+        <div> <!--style="background-color:yellow"-->
+            <p>div - p 1</p>
+            <span>div - span 1</span>
+            <p>div - p 2</p>
+            <p>div - p 3</p>
+        </div>
+        <p>p 3</p>
+        <p>p 4</p>
+        <div style="background-color: aqua">
+            <p>div - p 1</p>
+            <span>div - span 1</span>
+            <span>div - span 2</span>
+            <p>div - p 2</p>
+            <p>div - p 3</p>
+        </div>
+    </body>
+</html>       

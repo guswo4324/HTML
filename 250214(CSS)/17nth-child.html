@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>:nth-child</title>
+        <style>
+            li:first-child{  /*첫번째 리스트 색깔 변경*/
+                color:red;
+            }
+            li:last-child{   /*마지막 리스트 색깔 변경*/
+                color:blue;
+            }
+            p:nth-child(1){ /*자식인 p태그(부모는 누군지 모름)에서 첫번째 자식 p태그만 적용*/
+                color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <p>둘리</p> <!--부모가 body 자식이 p(첫번째)-->
+        <ul>
+            <li>첫째형 철수</li>
+            <li>둘째누나 영희</li>
+            <li>셋째 둘리</li>
+            <li>막내 희동이</li>
+        </ul>
+        <p>첫째형 철수</p>   <!--부모(body)의 두세번째 자식(p)-->
+        <p>둘째누나 영희</p>  
+        <div>
+            <p>또치</p>     <!--부모가 div p가 자식 / p가 자식이라 p:nth-child(1) 적용-->
+            <p>마이콜</p>
+        </div>
+    </body>
+</html>

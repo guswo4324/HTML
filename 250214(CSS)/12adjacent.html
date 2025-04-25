@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>인접 형제 선택자(adjacent sibling)</title>
+        <style>
+            h1 + h2 +h3 /* 맨끝놈만 적용(1->2->3순이여야함) */ 
+            {           
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>lorem1</h1>
+        <h2>lorem2</h2>
+        <h3>lorem3</h3> <!--적용-->
+        <h4>lorem4</h4>
+        <h1>lorem5</h1>
+        <h2>lorem6</h2>
+        <h3>lorem7</h3> <!--적용-->
+        <div>
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h3>h3</h3> <!--적용-->
+            <h2>h2</h2>
+            <h3>h3</h3>
+        </div>
+    </body>
+</html>

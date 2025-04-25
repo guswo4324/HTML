@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>:first-of-type / :last-of-type</title>
+        <style>
+            p:first-of-type{ /*첫번째 자식*/
+                color:red;
+            }
+            p:last-of-type{  /*마지막 자식*/
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p>p 0</p>
+        <div> 
+            <p>div - p 1</p>
+            <span>div - span 1</span>
+            <p>div - p 2</p>
+            <p>div - p 3</p>
+        </div>
+        <p>p 3</p>
+        <p>p 4</p>
+        <div>
+            <p>div - p 1</p>
+            <span>div - span 1</span>
+            <span>div - span 2</span>
+            <p>div - p 2</p>
+            <p>div - p 3</p>
+        </div>
+    </body>
+</html>       

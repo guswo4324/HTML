@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>absolute</title> 
+        <style>
+            body{
+                margin:0px;
+            }
+            .box{
+                width:100px;
+                height:100px;
+            }
+            .red-box{
+                background-color:red; 
+            }
+            .green-box{
+                background-color:green;
+                position:absolute;
+                left:200px;
+                top:200px;
+                /*relative는 선언된 시작부터 시준점시작이지만*/
+                /*absolute는 웹 브라우저 왼쪽 위 모서리가 기준*/ 
+                /*초록색 박스가 움직이는것 처럼 보임*/
+                /*(200,200)*/
+            }
+            .blue-box{
+                background-color:blue;
+            } 
+        </style>
+    </head>
+    <body>
+       <div class="box red-box"></div>
+       <div class="box green-box"></div>
+       <div class="box blue-box"></div>
+    </body>
+</html>

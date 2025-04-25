@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>event</title>
+    </head>
+    <body>
+        <form name="frm1">
+            <input type="text" name="txtName" onfocus="focusEvent()" onblur="blurEvent()">
+            <button type="submit" onclick="clickEvent()">전송</button>
+        </form>
+        <script>
+            function focusEvent(){
+                console.log("입력하세요");
+            }
+            function blurEvent(){
+                console.log("focus out");
+            }
+            function clickEvent(){
+                alert("클릭했어요");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>event</title>
+    </head>
+    <body>
+        <form name="frm1">
+            <button type="submit">이벤트 등록 메서드 사용</button>
+        </form>
+        <script>
+           const btnEl = document.querySelector("button");
+           const clickEvent = () => {
+            alert("이벤트 등록 메서드 사용 버튼 눌렀어요");
+           }
+        //    btnEl.addEventListener("click", clickEvent); //addEventListener 쓰면 on 빠진다
+           btnEl.addEventListener("dblclick",clickEvent); 
+        //    btnEl.addEventListener("click", function(){
+        //     alert("정의한 내용");
+        //    })
+        //    btnEl.onclick = clickEvent;
+        //    btnEl.onclick = function(){
+        //     alert("클릭 클릭");
+        //    }
+        //     btnEl.onclick = () => {
+        //         alert("화살표 함수 사용");
+        //     }
+        //         btnEl.onclick = clickEvent;
+
+        //         function clickEvent(){
+        //             alert("클릭 크릭");
+        //         }
+        </script>
+    </body>
+</html>

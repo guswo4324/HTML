@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>label tag</title>
+    </head>
+    <body><!--암묵적인지 명시적인지 label안에 input이 있나 없나-->
+        <form action="#">
+            <!--암묵적인 방법-->
+            <label> <!--label안에 input있음 / label for 사용 X-->
+                아이디
+                <input type="text">
+            </label>
+            <br>
+            
+            <!--명시적인 방법-->
+            <label for="userpw">비밀번호</label> <!--라벨밖에 input있음 / label과 for같이 사용-->
+            <input type="password" id="userpw"> <!--label의 for"userpw"와 id"userpw"같아야함-->
+            <br>
+            
+            <!--암묵적 + 명시적 방법-->
+            <label for="username"> 
+                <input type="text" id="username"> 이름
+            </label>
+            <br>
+            아이디 <input type="text">
+        </form>
+    </body>
+</html>

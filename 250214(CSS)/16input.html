@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>focus</title>
+        <style>
+            input:focus{
+                color:blue  /*입력받는 문자가 파란색*/
+            }
+            input:checked + label{  /*체크박스 라벨 -> 체크되면 빨간색(인접형제선택자 + 순서대로(1,2,3..) 적용)*/
+                color:red;
+            }
+            input:disabled, button:disabled{        /*disabled 선택자 사용되면(input과 button) 배경색 변경*/ 
+                background-color: darkslategrey;
+            }
+            input:enabled, button:enabled{
+                background-color: coral;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text"><br>
+        <input type="checkbox" id="adult">
+        <label for="adult">성인(20세이상)</label>
+        <input type="checkbox" id="child">
+        청소년
+        <br>
+        <input type="password" value="1234" disabled><br>
+        <button disabled>못 누르는 버튼</button>
+        <br>
+        <input type="text" value="둘리"><br>
+        <button>엄마 찾아 버튼</button>
+    </body>
+</html>

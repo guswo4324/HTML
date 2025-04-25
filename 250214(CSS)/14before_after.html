@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>::before, :;after</title>
+        <style>
+            p::before{ /*앞의 <p> 적용*/
+                color:blueviolet;
+                content:"<before>"; /*content:"<before>" */
+            }
+            p::after{           
+                color:red;
+                content:"<after>";
+            }
+        </style>
+    </head>
+    <body>
+        <p>Lorem, ipsum dolor.</p>
+        <p>banana</p>
+    </body>
+</html>

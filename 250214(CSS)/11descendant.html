@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>하위 선택자(descendant)</title>
+        <style>
+            div p /* 하위선택자(한칸 띄워쓰기) */
+            {           
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>lorem 1</p>
+            <ul>
+                <li>
+                    <p>lorem 2</p> <!--div하위에 있는 p태그에만 적용-->
+                </li>
+                <li>
+                    <p>div - ul - li - p</p> 
+                </li>
+                <li>
+                    <p>div - ul - li - p</p> 
+                </li>
+                <li>
+                    <h2>div - ul - li - h2</h2>
+                </li>
+            </ul>
+            <h1>div - h1</h1>
+        </div>
+        <p>lorem 4</p>
+    </body>
+</html>

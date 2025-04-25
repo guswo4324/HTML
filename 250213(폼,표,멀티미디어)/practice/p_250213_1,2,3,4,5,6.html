@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practice</title>
+    </head>
+    <body>
+        <h2>문자 입력 양식</h2>
+        <form>
+            <p>이름 : <input type="text" name="name" size="10"></p>
+            <p>학번 : <input type="name" name="name" size="10" value=""></p>
+            <p>학과 : <input type="text" name="school" value="컴퓨터학과"></p>
+            <p></p>
+            <input type="submit" value="전송">
+            <input type="reset" value="다시작성">
+        </form>
+        <h2>회원 인증 입력 양식</h2>
+        <form>
+            <p>ID : <input type="text" name="ID" size="15" required></p>
+            <p>PW : <input type="password" name="PSW" size="15" placeholder="비밀번호" required></p>
+            <p></p>
+            <input type="submit" value="전송">
+            <input type="reset" value="다시작성">
+        </form>
+        <h2>텍스트 공간 입력 양식</h2>
+        <form>
+            <textarea rows="5" cols="50">텍스트를 작성하는 공간입니다.</textarea>
+            <p></p>
+            <input type="submit" value="전송">
+            <input type="reset" value="다시작성">
+            <p></p>
+        </form>
+        <form>
+            <fieldset>
+                <legend>개인 정보 입력</legend>
+                <p>이름 : <input type="text" name="name"></p>
+                <p>학교 : <input type="text" name="school"></p>
+                <input type="submit" value="전송">
+                <input type="reset" value="다시작성">
+            </fieldset>
+        </form>
+        <h3>관심 있는 학습 주제 한 가지를 선택하세요</h3>
+        <form>
+            <select name="subjects">
+                <option value="1" selected>HTML5</option>
+                <option value="2">CSS3</option>
+                <option value="3">Javascript</option>
+                <option value="4">Jquery</option>
+            </select>
+            <p></p>
+            <input type="submit" value="전송">
+            <input type="reset" value="다시작성">
+            <p></p>
+        </form>
+        <h3>관심 있는 학습 주제를 모두 선택하세요</h3>
+        <form>
+            <select name="subjects" size="4" multiple>
+                <option value="1" selected>HTML5</option>
+                <option value="2">CSS3</option>
+                <option value="3">Javascript</option>
+                <option value="4">Jquery</option>
+            </select>
+            <p></p>
+            <input type="submit" value="전송">
+            <input type="reset" value="다시작성">
+            <p></p>
+            </select>
+        </form>
+    </body>
+</html>

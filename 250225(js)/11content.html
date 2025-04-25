@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>content</title>
+    </head>
+    <body>
+        <p id="title">Hello, <span style="display:none;">Dooly</span></p>
+        <p id="textContent"></p>
+        <p id="innerText"></p>
+        <p id="innerHTML"></p>
+
+        <h1 id="h1">Hello, May</h1>
+        <style>
+            .style1{
+                color:green;
+                background-color: pink;
+                font-size: 30px;
+                font-weight: bolder;
+                line-height: 1;
+            }
+            .style-size{
+                font-size: 40px;
+            }
+        </style>
+        <script>
+            console.log(document.getElementById("title").textContent);
+            console.log(document.getElementById("title").innerText);
+            console.log(document.getElementById("title").innerHTML);
+            document.getElementById("textContent").textContent = `<strong>안녕하세요</strong>`;
+            document.getElementById("innerText").innerText = `<strong>둘리</strong>`;
+            document.getElementById("innerHTML").innerHTML = `<strong>도우너</strong>`;
+
+            const el1 = document.querySelector("h1");
+            el1.classList.add("style1");
+            el1.classList.add("style-size");
+
+            //두개다 같은방식(위아래)
+
+            // el1.style.color = "green";     
+            // el1.style.backgroundColor = "pink";
+            // el1.style.fontSize = "30px";
+        </script>
+    </body>
+</html>

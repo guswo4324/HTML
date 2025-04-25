@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>일반 형제 선택자(adjacent sibling)</title>
+        <style>
+            h1 ~ h2 /* h1 -> h2 순으로 h2만 다 적용 // 
+            3개면(h1 ~ h2 ~ h3) 맨뒤 두개만(h2 ~ h3) 적용  */ 
+            {           
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>lorem1</h1>
+        <h2>lorem2</h2> <!--적용-->
+        <h2>lorem3</h2> <!--적용-->
+        <h1>lorem5</h1>
+        <h2>lorem6</h2> <!--적용-->
+        <h3>lorem7</h3> 
+        <div>
+            <h2>h2</h2> <!--적용 X-->
+            <h1>h1</h1>
+            <h2>h2</h2> <!--적용-->
+            <h2>h2</h2> <!--적용-->
+            <h3>h3</h3>
+        </div>
+    </body>
+</html>

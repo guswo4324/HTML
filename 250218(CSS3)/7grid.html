@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>grid</title>
+        <link rel="stylesheet" href="7grid-basic.css">
+        <style>
+            .grid-container{
+                display:grid;
+                /* /* grid-template-rows:100px 100px;
+                /*==grid-template-rows:repeat(2, 100px)*/
+                /*grid-template-columns:100px auto; */
+               
+                /* grid-template-columns:minmax(10px, 80px) 100px;
+                grid-template-rows: minmax(10px, 30px) 50px; */
+                /*최솟값과 최댓값 지정 */
+
+                /* row-gap: 10px;
+                column-gap: 20px; */ 
+                align-items: start; 
+                /*align 속성 : 세로방향 정렬 //stretch:꽉채우도록 크기 늘림*/
+                /*justify-items: end; */
+                /*justify 속성 : 가로방향 정렬 //*/
+                place-items:center;
+                /*grid 안에 items 위치 정렬*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item">item-1</div>
+            <div class="grid-item">item-2</div>
+            <div class="grid-item">item-3</div>
+            <div class="grid-item">item-4</div>
+        </div>
+    </body>
+</html>

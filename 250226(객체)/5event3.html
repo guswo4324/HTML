@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>event</title>
+    </head>
+    <body>
+        <form name="frm1">
+            <button type="button">이벤트 객체 사용하기</button> <!--button type="submit" -> "button"-->
+        </form>
+        <script>
+           const btnEl = document.querySelector("button");
+           btnEl.addEventListener("click",function(event){
+            alert("이벤트 객체 사용하기 버튼 클릭했어요.");
+            console.log(event);
+           }); 
+
+        </script>
+    </body>
+</html>

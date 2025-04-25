@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+    </head>
+    <body>
+        <form name="frm1">
+            <label for="uname">이름</label>
+            <input type="text" name="uname" name="uname" value="둘리"><br>
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password1" value="1234"><br>
+            <label for="age">나이</label>
+            <input type="text" id="age" name="age" value="99"><br>
+            <textarea name="story">
+                둘리와 도우너는 친구입니다
+                둘리는 또치와도 친구입니다.
+            </textarea><br>
+            <label for="gender">성별</label>
+            <select id="gender" name="gender">
+                <option value="male">남자</option>
+                <option value="female">여자</option>
+                <option value="not">트랜스젠더</option>
+            </select><br>
+            <button type="submit">전송</button>
+            <h2>좋아하는 과일</h2>
+            <label><input type="checkbox" value="apple">사과</label>
+            <label><input type="checkbox" value="banana">바나나</label>
+            <label><input type="checkbox" value="strawberry">딸기</label>
+            <label><input type="checkbox" value="mango">망고</label>
+            <label><input type="checkbox" value="orange">오렌지</label>
+            <br>
+        </form>
+        <script>
+            console.log(document.frm1.elements);
+            console.log(document.frm1.elements[1]);
+            console.log(document.frm1.elements['uname']);
+            console.log(document.frm1.uname);
+            console.log(`이름:${document.frm1.uname.value}`);
+            console.log(`비밀번호:${document.frm1.password1.value}`);
+            console.log(`나이:${document.frm1.age.value}`);
+            document.frm1.uname.value="도우너";
+            document.frm1.age.value="7";
+            document.frm1.password1.value="7777";
+            console.log(`이름:${document.frm1.uname.value}`);
+            console.log(`비밀번호:${document.frm1.password1.value}`);
+            console.log(`나이:${document.frm1.age.value}`);
+            console.log(`textarea:${document.frm1.story.value}`);
+            document.frm1.story.value="안녕둘리";
+            console.log(document.frm1.story.value);
+        </script>
+    </body>
+</html>

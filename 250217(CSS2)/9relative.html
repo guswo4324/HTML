@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>relative</title> 
+        <style>
+            .box{
+                width:100px; 
+                height:100px;
+            }
+            .red-box{
+                background-color:red; 
+            }
+            .green-box{
+                background-color:green;
+                position:relative;
+                left:100px;  
+                top:100px;
+                /*relative 선언된 순간 초록색 박스 기준점 시작 */
+                /*기준점 기준으로 이동*/
+                /*상대적이로 움직임, 항상 기준점을 기준으로*/ 
+                /*좌측으로 부터 100px, 하단으로부터 100px*(그래서 반대로 이동)*/
+            }
+            .blue-box{
+                background-color:blue;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="box red-box"></div>
+       <div class="box green-box"></div>
+       <div class="box blue-box"></div>
+    </body>
+</html>

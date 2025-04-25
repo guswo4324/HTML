@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dataset 속성</title>
+    </head>
+    <body>
+        <button data-cnt="10">가방 구매</button>
+        <button data-cnt="0">신발 구매</button>
+        <script>
+            const buttonEl = document.querySelectorAll("button");
+            buttonEl.forEach((el) => {
+                console.log("=================");
+                console.log(el.dataset.cnt); //가방 : 10 -> 신발 : 0
+                console.log("=================");
+                el.dataset.cnt = 100;
+                console.log(el.dataset.cnt); //가방 : 100 -> 신발 : 100
+            })
+            //.cnt : 객체접근
+        </script>
+    </body>
+</html>

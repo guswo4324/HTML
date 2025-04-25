@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>content</title>
+    </head>
+    <body>
+        <h1 id="h1">Hello, May</h1>
+        <style>
+            .style1{
+                color:green;
+                background-color: pink;
+                font-size: 30px;
+                font-weight: bolder;
+                line-height: 1;
+            }
+            .style-size{
+                font-size: 40px;
+            }
+        </style>
+        <script>
+            const el1 = document.querySelector("h1");
+            //1초 마다 toggle() 메서트 반복 실행
+            setInterval(function(){
+                el1.classList.toggle("style1");
+                el1.classList.toggle("style-size");
+            }, 1000);
+        </script>
+    </body>
+</html>

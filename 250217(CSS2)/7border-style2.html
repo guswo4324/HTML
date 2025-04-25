@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>border-style</title> 
+        <style>
+          p{
+            border: 5px solid aquamarine;
+            padding: 10px; /*border 안쪽에 공간두고 싶을때*/   
+          }
+          h1{
+            border:10px solid purple; /*테두리 꾸미기*/
+            display: inline;
+            padding: 15px;
+          }
+          h2{
+            border-bottom:10px dotted blue;
+          }
+          div{
+            width:100px;
+            height:100px;
+            padding:10px;
+            border:1px solid black;   /*border까지(margin 제외) 지름 122 px*/
+            margin:10px;
+          }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <p>padding</p>
+        <h1>h1</h1>
+        <h2>h2</h2>
+    </body>
+</html>

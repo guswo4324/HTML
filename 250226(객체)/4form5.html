@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+    </head>
+    <body>
+        <form name="frm1">
+            <h2>좋아하는 과일</h2>
+            <label><input type="checkbox" name="fruit" value="apple">사과</label>
+            <label><input type="checkbox" name="fruit" value="banana">바나나</label>
+            <label><input type="checkbox" name="fruit" value="strawberry" checked>딸기</label>
+            <label><input type="checkbox" name="fruit" value="mango" checked>망고</label>
+            <label><input type="checkbox" name="fruit" value="orange">오렌지</label>
+            <br>
+            <h2>둘리야, 넌 뭐가 젤 싫어?</h2>
+            <label><input type="radio" name="hate" value="길동이" checked>길동이한테 혼나는 것</label>
+            <label><input type="radio" name="hate" value="도우너">도우너가 난폭하게 행동하는 것</label>
+            <label><input type="radio" name="hate" value="밥줘">밥 못 먹을때</label>
+            <br>
+        </form>
+        <script>
+            console.log(document.frm1.fruit[0].value); //apple
+            console.log(document.frm1.fruit[1].value); //banana
+            const cEls = document.querySelectorAll("[type=checkbox]");
+            for(let i=0; i<cEls.length; i++){
+                // if(cEls[i].checked){
+                //     console.log(`선택한 과일:${cEls[i].value}`);
+                // }
+                if(cEls[i].checked){
+                    cEls[i].checked = false;
+                }
+                else{
+                    cEls[i].checked = true;
+                }
+            }
+            const cEls1 = document.querySelectorAll("[type=radio]");
+            for(let i=0; i<cEls1.length; i++){
+                // if(cEls1[i].checked){
+                //     cEls1.checked = false;
+                //     console.log(`나는 배고파:${cEls1[i].value}`);
+                // }
+                // else{
+                //     cEls1[i].checked = true;
+                //     console.log(`내가 화나는 사람:${cEls1[i].value}`);
+                // }
+                if(cEls1[i].value === "밥줘"){
+                    cEls1[i].checked = true;
+                    console.log(`나는 배고파:${cEls1[i].value}`);
+                }
+            }
+        </script>
+    </body>
+</html>

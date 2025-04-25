@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>checked tag</title>
+    </head>
+    <body>
+        <form action="#">
+            <fieldset> <!--apple="apple", banana="banana", orange="orange"-->
+                <legend>좋아하는 과일</legend>
+                <input type="checkbox" id="apple" name="apple" value="apple">
+                <label for="apple">apple</label><br>
+                <input type="checkbox" id="banana" name="banana" value="banana">
+                <label for="banana">banana</label><br>
+                <input type="checkbox" id="orange" name="orange" value="orange">
+                <label for="orange">orange</label><br>
+            </fieldset>
+            <fieldset> <!--fruit="apple,banana,orange" 값이 배열처럼 입력됨"-->
+                <legend>좋아하는 과일2</legend>
+                <input type="checkbox" name="fruit" value="apple"> 
+                <label for="apple">apple</label><br>
+                <input type="checkbox" name="fruit" value="banana">
+                <label for="banana">banana</label><br>
+                <input type="checkbox"name="fruit" value="orange">
+                <label for="orange">orange</label><br>
+            </fieldset>
+        </form>
+    </body>
+</html>

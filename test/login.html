@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>로그인 화면</title> 
+        <style>
+           .container{
+            width:500px;
+            padding:10px;
+            margin:0 auto;
+            background-color:rgb(2, 63, 87);
+            color:white;   
+           }
+           p{
+            border:1px solid grey;
+           }
+           h2{
+            text-align:center;
+            font-weight: lighter;
+           }
+           .box1{
+            display:inline-flex;
+            width:250px;
+            height:30px;
+            background-color:grey;
+            text-align:center;
+            justify-content: center;
+           }
+           .box2{
+            display:inline-flex;
+            width:250px;
+            height:30px;
+            background-color:rgb(9, 204, 155);
+            text-align:center;
+            justify-content: center;
+            float:right;
+           }
+           .box3{
+            background-color:rgb(9, 204, 155);
+            text-align:center;
+           }
+           input{
+            background-color:#025344;
+            width:490px;
+           }
+           a{
+            text-decoration:none;
+            color:white;
+            font-size:larger;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box1">
+                <a href="./signup.html">Sign Up</a>
+            </div>
+            <div class="box2">
+                <a href="./login.html">Log in</a>
+            </div>
+            <h2>Welcome Back!</h2>
+            <p><input type="text" name="emailaddress" placeholder="EmailAddress*"></p>
+            <p><input type="password" name="password" placeholder="Password*"></p>
+            <div class="box3">
+                <a href="./main.html">LOG IN</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+    </head>
+    <body>
+        <form name="frm1">
+            <h2>좋아하는 과일</h2>
+            <label><input type="checkbox" name="fruit" value="apple">사과</label>
+            <label><input type="checkbox" name="fruit" value="banana">바나나</label>
+            <label><input type="checkbox" name="fruit" value="strawberry" checked>딸기</label>
+            <label><input type="checkbox" name="fruit" value="mango" checked>망고</label>
+            <label><input type="checkbox" name="fruit" value="orange">오렌지</label>
+            <br>
+        </form>
+        <script>
+            console.log(document.frm1.fruit[0].value); //apple
+            console.log(document.frm1.fruit[1].value); //banana
+            const cEls = document.querySelectorAll("[type=checkbox]");
+            for(let i=0; i<cEls.length; i++){
+                // if(cEls[i].checked){
+                //     console.log(`선택한 과일:${cEls[i].value}`);
+                // }
+                if(cEls[i].checked){
+                    cEls[i].checked = false;
+                }
+                else{
+                    cEls[i].checked = true;
+                }
+            }
+        </script>
+    </body>
+</html>

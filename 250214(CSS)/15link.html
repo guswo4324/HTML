@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>링크 가상 클래스</title>
+        <style>
+            a:link{ 
+                color:red; 
+            }
+            a:visited{           /*접속된 사이트는 녹색 적용*/
+                color:green;
+            }
+            p:hover{            /*마우스 가져다대면 파란색*/
+                color:blue;
+            }
+            button:active{      /*가져다대면 검은색*/
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://www.naver.com">네이버</a><br>
+        <a href="https://www.google.com">구글</a><br>
+        <a href="https://www.nate.com">네이트</a>
+        <p>hover blue 적용할꺼에요</p>
+        <button>클릭한 상태로 유지해보세요</button>
+    </body>
+</html>

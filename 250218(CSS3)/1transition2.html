@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transition</title>
+        <style>
+            .red-box{
+                width:100px;
+                height:100px;
+                background-color:red;
+                transition-property: background-color, color, width; /*전환 효과 지정*/
+                transition-duration: 3s, 500ms, 2s; /*지속시간*/
+                transition-delay: 3s;
+                /*delay는 duration 지연*/
+            }
+            .red-box:hover{
+                background-color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="red-box"></div>
+    </body>
+</html>
